@@ -6,5 +6,27 @@
   },
   "description2": {
     "text": "Het landgoed is omgeven door schitterende tuinen, bossen en meren, wat het tot een ideale locatie maakt voor wandelingen en buitenactiviteiten."
-  }
+  },
+  "img": [
+    {
+      "id": 1,
+      "src": "/accommodation/accommodation-1.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    },
+    {
+      "id": 2,
+      "src": "/accommodation/accommodation-2.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    },
+    {
+      "id": 3,
+      "src": "/accommodation/accommodation-3.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    },
+    {
+      "id": 4,
+      "src": "/accommodation/accommodation-4.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    }
+  ]
 }

@@ -11,7 +11,7 @@ const Contacts = () => {
   return (
     <section className="pt-[200px] pb-26">
       <div className="container flex flex-col justify-center items-center">
-        <Title title="Contacten" titleClassName="mb-12 lg:mb-16 text-center" />
+        <Title title="Contacten" />
         
         <div className="w-full flex flex-col md:flex-row justify-between items-center mb-12 lg:mb-16">
           <div className="flex flex-col gap-4 mb-8">

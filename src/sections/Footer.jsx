@@ -1,7 +1,7 @@
 import Logo from "@/components/ui/Logo";
 import Email from "@/components/ui/Email";
 import Phone from "@/components/ui/PhoneNumber";
-import { footerData, routes } from "@/data";
+import { footerData, routesData } from "@/data";
 import LinkButton from "@/components/ui/LinkButton";
 
 
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container ">
       
       <div className="flex flex-col items-center gap-8 md:flex-row justify-around">
-        <LinkButton href={routes.Policy}>{footerData.policy}</LinkButton>
+        <LinkButton href={routesData.Policy}>{footerData.policy}</LinkButton>
         <p className="text-xs">{footerData.rights}</p>
       </div>
       </div>
