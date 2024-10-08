@@ -1,8 +1,6 @@
-
-import { ButtonProp } from '@/@types';
 import clsx from 'clsx';
 
-const Button: React.FC<ButtonProp> = ({
+const Button = ({
   variant,
   children,
   className,
