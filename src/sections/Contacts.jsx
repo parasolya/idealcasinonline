@@ -1,7 +1,7 @@
 import ContactsForm from "@/components/common/ContactsForm/ContactsForm";
 import Email from "@/components/ui/Email";
 import Location from "@/components/ui/Location";
-import Map from "@/components/ui/map";
+import Map from "@/components/ui/Map";
 import Phone from "@/components/ui/PhoneNumber";
 import Title from "@/components/ui/Title";
 import { navDataLink } from "@/data";
