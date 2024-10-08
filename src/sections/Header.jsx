@@ -1,13 +1,16 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import NavMenu from "@/components/common/NavMenu";
+import NavMenu from "@/components/common/NavMenu/NavMenu";
 import Logo from "@/components/ui/Logo";
 import { useEffect, useState } from "react";
+import Button from "@/components/ui/Button";
+import MenuIcon from "/public/menu.svg";
+import { BurgerMenu } from "@/components/common/BurgerMenu/BurgerMenu";
 
 const Header = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const [pendingSection, setPendingSection] = useState(null); // видалено типізацію
+  const [pendingSection, setPendingSection] = useState(null);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -32,7 +35,11 @@ const Header = () => {
   };
 
   const handleClick = (to) => {
-    if (pathname === "/policy") {
+    if (
+      pathname === "/policy" ||
+      pathname === "/game" ||
+      pathname === "/contacts"
+    ) {
       setPendingSection(to);
       router.push("/");
     }
@@ -55,24 +62,29 @@ const Header = () => {
         <div className="container flex justify-between items-center">
           <Logo />
 
-          <NavMenu className="notMd:hidden" onClick={handleClick} />
-
-          {/* 
           {!isMenuToggled && (
-            <div id="navbar" className="md:hidden"> */}
-          {/* <Button
+            <div id="navbar" className="md:hidden">
+              <Button
                 type="button"
+                aria-label="menu"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
-                menu
-              </Button> */}
-          {/* </div>
-          )} */}
+                <MenuIcon width={24} height={24} className="fill-primary" />
+              </Button>
+            </div>
+          )}
         </div>
 
-        {/* {isMenuToggled && (
-          <BurgerMenu className="md:hidden" handleMenuToggled={onMenuToggled} />
-        )} */}
+        <NavMenu className="notMd:hidden" onClick={handleClick} />
+
+        {isMenuToggled && (
+          <BurgerMenu
+            className="md:hidden"
+            handleMenuToggled={onMenuToggled}
+            isOpened={isMenuToggled}
+            handleClick={handleClick}
+          />
+        )}
       </header>
     </>
   );

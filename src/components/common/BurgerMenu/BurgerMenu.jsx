@@ -1,33 +1,17 @@
-import { FC } from 'react';
+"use client";
+
 import { clsx } from 'clsx';
-import { usePathname } from 'next/navigation';
 
-import { Logo } from '@/components/ui/Logo';
-import { ButtonLess } from '@/components/ui/ButtonLess';
-import { NavMenu } from '@/components/ui/NavMenu';
-import { ButtonMain } from '@/components/ui/ButtonMain';
+import CloseIcon from '/public/close.svg';
+import Logo from "@/components/ui/Logo";
+import Button from '@/components/ui/Button';
+import NavMenu from '../NavMenu/NavMenu';
 
-import CloseIcon from '@/../public/icons/close.svg';
-
-import { headerData } from '@/data';
-
-import s from './BurgerMenu.module.css';
-
-export const BurgerMenu = ({ onClick, isOpened }) => {
-  const pathname = usePathname();
-
-  const handleClick = (to) => {
-    if (pathname === '/policy') {
-      window.location.href = `/#${to}`;
-    } else {
-      onClick();
-    }
-  };
-
+export const BurgerMenu = ({ handleMenuToggled, isOpened, handleClick, className }) => {
   return (
     <div
       className={clsx(
-        `fixed left-0 top-0 z-50 flex h-full w-full flex-col overflow-hidden overflow-y-auto bg-bg1 transition lg:hidden ${s.background}`,
+        `fixed left-0 top-0 z-50 flex h-full w-full flex-col overflow-hidden overflow-y-auto transition lg:hidden bg-darkBrown`,
         {
           'translate-x-full': !isOpened,
         },
@@ -35,20 +19,19 @@ export const BurgerMenu = ({ onClick, isOpened }) => {
     >
       <div className='container'>
         <div className='flex items-center justify-between py-6'>
-          <Logo theme={'green'} size={'small'} onClick={onClick}/>
-          <ButtonLess
+          <Logo />
+          <Button
             type='button'
-            purpose='burger'
-            aria={headerData.ariaLabelClose}
-            onClick={onClick}
+            aria-label="close"
+            onClick={handleMenuToggled}
             className='h-12 w-12 p-3'
           >
-            <CloseIcon width={24} height={24} className='fill-green' />
-          </ButtonLess>
+            <CloseIcon width={24} height={24} className='fill-primary' />
+          </Button>
         </div>
 
         <div className='mb-[152px] mt-[96px] flex flex-col items-center gap-[73px] md:mb-[96px]'>
-          <NavMenu onClick={handleClick} />       
+          <NavMenu onClick={handleClick} onMenuToggled={handleMenuToggled} /> 
         </div>
       </div>
     </div>

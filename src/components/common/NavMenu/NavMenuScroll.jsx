@@ -6,11 +6,20 @@ const NavMenuScroll = ({
   classNameList,
   classNameLink,
   onClick,
+  onMenuToggled,
 }) => {
+
+  const handleItemClick = (to) => {
+    onClick(to); 
+    if (onMenuToggled) {
+      onMenuToggled(); 
+    }
+  };
+
   return (
     <ul
         className={clsx(
-          "flex items-end lg:items-center justify-between gap-6 lg:gap-8",
+          "flex flex-col items-center md:flex-row md:items-end  justify-between gap-8",
           classNameList
         )}
       >
@@ -28,7 +37,7 @@ const NavMenuScroll = ({
               offset={0}
               duration={500}
               tabIndex={0}
-              onClick={() => onClick(to)}
+              onClick={() => handleItemClick(to)}
             >
               {section}
             </LinkScroll>
