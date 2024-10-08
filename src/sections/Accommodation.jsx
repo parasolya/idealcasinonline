@@ -2,13 +2,12 @@ import Image from "next/image";
 
 import Title from "@/components/ui/Title";
 import { accommodationData } from "@/data";
-import React from "react";
 
 const Accommodation = () => {
   return (
     <section
       id={accommodationData.id}
-      className="section font-extralight bg-about bg-brown"
+      className="section font-extralight"
     >
       <div className="container flex flex-col justify-center items-center">
         <Title title={accommodationData.title} />

@@ -1,10 +1,9 @@
-import Speelkamer from "@/sections/Speelkamer"
-
+import Game from "@/sections/Game"
 
 const page = () => {
   return (
     <>
-    <Speelkamer />
+    <Game />
     </>
   )
 }

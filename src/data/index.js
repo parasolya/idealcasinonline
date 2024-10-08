@@ -6,6 +6,6 @@ export { default as contactsData } from './contactsData.json';
 export { default as footerData } from './footerData.json';
 export { default as formData } from './formData.json';
 export { default as routesData } from './routes.json';
-export { default as accommodationData } from './accommodation.json';
-export { default as gameData } from './game.json';
-export { default as restaurantsData } from './restaurants.json'
+export { default as accommodationData } from './accommodationData.json';
+export { default as gameData } from './gameData.json';
+export { default as restaurantsData } from './restaurantsData.json'

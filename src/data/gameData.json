@@ -6,5 +6,27 @@
   },
   "description2": {
     "text": "Wij bieden uitstekende mogelijkheden voor het spelen van roulette. De speeltafels zijn uitgerust met moderne technologie en worden altijd bemand door professionele dealers die een spannende en opwindende ambiance creëren."
-  }
+  },
+  "img": [
+    {
+      "id": 1,
+      "src": "/game/game-1.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    },
+    {
+      "id": 2,
+      "src": "/game/game-2.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    },
+    {
+      "id": 3,
+      "src": "/game/game-3.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    },
+    {
+      "id": 4,
+      "src": "/game/game-4.jpg",
+      "alt": "Gastenverblijf in het kasteel"
+    }
+  ]
 }
