@@ -1,15 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      notMd: { max: "767.98px" },
+      md: "768px",
+      lg: "1280px",
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        xs: "1.25rem",
+        md: "2rem",
+        lg: "1.5rem",
+      },
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#EC8205",
+        darkGreen: "#63631e"
+      },
+      
+      spacing: {
+        "26": "5.8rem",
       },
     },
   },

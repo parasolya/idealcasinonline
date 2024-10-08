@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body,
+html,
+#rood,
+.app {
+  background: #99992c;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 768px) and (max-width: 1279px) {
+  body,
+  html,
+  #rood,
+  .app {
+    font-size: 16px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 1280px) {
+  body,
+  html,
+  #rood,
+  .app {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-[54px] md:py-16 lg:py-26;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .transition {
+    @apply transition-all duration-300 ease-out;
   }
 }

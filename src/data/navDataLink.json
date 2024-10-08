@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "href": "plays",
+    "page": "Speelkamer"
+  },
+  {
+    "id": 2,
+    "href": "contacts",
+    "page": "Contacten"
+  }
+]

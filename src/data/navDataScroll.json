@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "to": "thuis",
+    "section": "Thuis"
+  },
+  {
+    "id": 2,
+    "to": "thuis",
+    "section": "Thuis"
+  },
+  {
+    "id": 3,
+    "to": "about",
+    "section": "Over ons"
+  },
+  {
+    "id": 4,
+    "to": "accommodatie",
+    "section": "Accommodatie"
+  },
+  {
+    "id": 5,
+    "to": "restaurants",
+    "section": "Restaurants en Culinair"
+  },
+  {
+    "id": 6,
+    "to": "kunst",
+    "section": "Kunst"
+  }
+]
