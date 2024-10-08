@@ -11,7 +11,7 @@ export const BurgerMenu = ({ handleMenuToggled, isOpened, handleClick, className
   return (
     <div
       className={clsx(
-        `fixed left-0 top-0 z-50 flex h-full w-full flex-col overflow-hidden overflow-y-auto transition lg:hidden bg-darkBrown`,
+        `fixed left-0 top-0 z-50 flex h-full w-full flex-col overflow-hidden overflow-y-auto transition lg:hidden bg-darkBrown bg-opacity-95`,
         {
           'translate-x-full': !isOpened,
         },

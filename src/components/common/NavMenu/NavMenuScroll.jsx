@@ -19,7 +19,7 @@ const NavMenuScroll = ({
   return (
     <ul
         className={clsx(
-          "flex flex-col items-center md:flex-row md:items-end  justify-between gap-8",
+          "flex flex-col items-center lg:flex-row lg:items-end  justify-between gap-8",
           classNameList
         )}
       >

@@ -1,15 +1,12 @@
 import Image from "next/image";
 
-import Title from '@/components/ui/Title'
-import { restaurantsData } from '@/data'
-import React from 'react'
+import Title from "@/components/ui/Title";
+import { restaurantsData } from "@/data";
+import React from "react";
 
 const Restaurants = () => {
   return (
-    <section
-      id={restaurantsData.id}
-      className="section font-extralight"
-    >
+    <section id={restaurantsData.id} className="section font-extralight">
       <div className="container flex flex-col justify-center items-center">
         <Title title={restaurantsData.title} />
 
@@ -47,7 +44,7 @@ const Restaurants = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Restaurants
+export default Restaurants;

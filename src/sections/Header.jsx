@@ -58,28 +58,30 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute left-0 py-9 lg:py-2 z-20 w-full  bg-darkBrown">
-        <div className="container flex justify-between items-center">
-          <Logo />
-
-          {!isMenuToggled && (
-            <div id="navbar" className="md:hidden">
-              <Button
-                type="button"
-                aria-label="menu"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
-              >
-                <MenuIcon width={24} height={24} className="fill-primary" />
-              </Button>
+      <header className="absolute left-0 py-9 lg:py-2 z-20 w-full bg-darkBrown">
+        <div className="container">
+          <div className="w-full flex justify-between items-center">
+            <Logo />
+            <div>
+              <NavMenu className="notLg:hidden" onClick={handleClick} />
+              {!isMenuToggled && (
+                <div id="navbar" className="lg:hidden">
+                  <Button
+                    type="button"
+                    aria-label="menu"
+                    onClick={() => setIsMenuToggled(!isMenuToggled)}
+                  >
+                    <MenuIcon width={24} height={24} className="fill-primary" />
+                  </Button>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
-
-        <NavMenu className="notMd:hidden" onClick={handleClick} />
 
         {isMenuToggled && (
           <BurgerMenu
-            className="md:hidden"
+            className="lg:hidden"
             handleMenuToggled={onMenuToggled}
             isOpened={isMenuToggled}
             handleClick={handleClick}

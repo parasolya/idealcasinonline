@@ -5,9 +5,7 @@ import { gameData } from "@/data";
 
 const Game = () => {
   return (
-    <section
-      className="pt-[200px] pb-26 font-extralight"
-    >
+    <section className="pt-[200px] pb-26 font-extralight">
       <div className="container flex flex-col justify-center items-center">
         <Title title={gameData.title} />
         <div className="flex flex-col gap-8 items-center text-center mb-8 lg:mb-20">
@@ -30,10 +28,9 @@ const Game = () => {
             </li>
           ))}
         </ul>
-  
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Game
+export default Game;

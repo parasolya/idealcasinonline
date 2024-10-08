@@ -5,10 +5,7 @@ import { accommodationData } from "@/data";
 
 const Accommodation = () => {
   return (
-    <section
-      id={accommodationData.id}
-      className="section font-extralight"
-    >
+    <section id={accommodationData.id} className="section font-extralight">
       <div className="container flex flex-col justify-center items-center">
         <Title title={accommodationData.title} />
         <div className="flex flex-col gap-8 items-center text-center mb-8 lg:mb-20">
@@ -31,7 +28,6 @@ const Accommodation = () => {
             </li>
           ))}
         </ul>
-  
       </div>
     </section>
   );

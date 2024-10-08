@@ -11,6 +11,7 @@ module.exports = {
       sm: "480px",
       notMd: { max: "767.98px" },
       md: "768px",
+      notLg: { max: "1279.98px" },
       lg: "1280px",
     },
     container: {

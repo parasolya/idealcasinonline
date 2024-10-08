@@ -12,7 +12,7 @@ const NavMenu = ({ className, onClick, onMenuToggled }) => {
   return (
     <nav
       className={clsx(
-        "flex flex-col items-center md:flex-row md:items-end justify-between gap-8",
+        "flex flex-col items-center lg:flex-row gap-8",
         className
       )}
     >
