@@ -51,7 +51,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute left-0 py-9 lg:py-2 z-20 w-full  bg-darkGreen">
+      <header className="absolute left-0 py-9 lg:py-2 z-20 w-full  bg-darkBrown">
         <div className="container flex justify-between items-center">
           <Logo />
 

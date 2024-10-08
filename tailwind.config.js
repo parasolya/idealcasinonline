@@ -25,7 +25,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#EC8205",
-        darkGreen: "#63631e"
+        lightBrown: "#EFEAE4",
+        brown: "#3E2810",
+        titleBrown: "#452C0E",
+        darkBrown: "#120C05",
       },
       
       spacing: {

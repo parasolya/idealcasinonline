@@ -1,12 +1,7 @@
 [
-  {
-    "id": 1,
-    "to": "thuis",
-    "section": "Thuis"
-  },
-  {
+ {
     "id": 2,
-    "to": "thuis",
+    "to": "hero",
     "section": "Thuis"
   },
   {
@@ -23,10 +18,5 @@
     "id": 5,
     "to": "restaurants",
     "section": "Restaurants en Culinair"
-  },
-  {
-    "id": 6,
-    "to": "kunst",
-    "section": "Kunst"
   }
 ]

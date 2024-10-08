@@ -1,12 +1,4 @@
 {
   "id": "hero",
-  "title": {
-    "firstWords": "Web",  
-    "secondWords": "Red Cat"
-  },
-  "description": {
-    "span": "our web studio ",
-    "text": "creates user-friendly and fast websites that impress with aesthetic design, are optimized for SEO, and support your marketing goals. Trust us with the development, so your business can grow effectively and efficiently."
-  },
-  "textButton": "Contact us"
+  "title": "Landgoed Zilverhof met casino speelkamer is een culinair landgoed waar luxe en geschiedenis samenkomen."
 }
